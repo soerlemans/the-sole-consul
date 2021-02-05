@@ -2,6 +2,7 @@
 	top: 10%;
 	left: 4%;
 	position: fixed;
+	z-index: 99;
 }
 
 .menu ul {

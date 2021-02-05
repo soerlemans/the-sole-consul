@@ -7,6 +7,7 @@
 	margin: auto;
 	overflow: hidden;
 	background-color: #FFEE88;
+	z-index: 99;
 }
 
 /* Style the links inside the navigation bar */

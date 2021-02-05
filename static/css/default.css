@@ -11,7 +11,7 @@ body {
 	top: 20px;
 	position: relative;
 	background-color: #EEEE99;
-	z-index : -99
+	z-index : 1
 }
 
 
