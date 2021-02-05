@@ -3,15 +3,13 @@ body {
 }
 
 .page {
+	padding-top: 20px;
 	width: 70%;
 	margin: auto;
 }
 
 .content {
-	top: 20px;
-	position: relative;
 	background-color: #EEEE99;
-	z-index : 1
 }
 
 

@@ -20,7 +20,7 @@
 		  <tr>
 		  </tr>
 		</tb>
-
+		
 		<?php include('includes/footer.php') ?>
 	  </div>
 	</div>
