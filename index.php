@@ -3,7 +3,7 @@
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
-	<link rel="stylesheet" href="static/css/default.css" type="text/css"> </link>
+	<link rel="stylesheet" href="static/css/default.css" type="text/css"></link>
 
 	<!-- I like this title as consuls are advisors. Furthermore its a contradiction cause consuls 
 		 come in pairs as to prevent an absolute authority !-->
@@ -15,7 +15,13 @@
 
 	<div class="page">
 	  <div class="content">
-		<?php include('includes/content.php') ?>
+		
+		<tb>
+		  <tr>
+		  </tr>
+		</tb>
+
+		<?php include('includes/footer.php') ?>
 	  </div>
 	</div>
 	

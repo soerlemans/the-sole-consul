@@ -14,6 +14,8 @@
 	  <div class="content">
 		<h3> Contact info: </h3>
 		<a href="mailto:thetoad0@gmail.com">thetoad0@gmail.com</a>
+
+		<?php include('includes/footer.php') ?>
 	  </div>
 	</div>
   </body>
