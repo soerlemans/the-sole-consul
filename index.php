@@ -20,6 +20,8 @@
 		  <tr>
 		  </tr>
 		</tb>
+
+		<p> lorem ipsum </p>
 		
 		<?php include('includes/footer.php') ?>
 	  </div>
