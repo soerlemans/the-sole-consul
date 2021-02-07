@@ -15,76 +15,13 @@
 		<div class="page">
 			<div class="content">
 
-				<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+				<form method="post" action="check_upload.php">
 					Name <br> <input type="text" name="ftitle" value="" > <br>
 					Description:<br> <input type="text" name="fdescription"> <br>
-					File itself <br> <input type="file" name="ffile"> <br>
+					Upload post: <br> <input type="file" name="ffile"> <br>
 					<br>
 					<input type="submit">
 				</form>
-
-				<?php
-				if($_SERVER["REQUEST_METHOD"] == "POST")
-				{
-					include('includes/functions.php');
-					
-					echo '<div class="error">';
-					
-					$link = new mysqli("localhost", "root", "arrows1290", "the_sole_consul");
-					if($link === false){
-						die("ERROR: Could not connect. " . mysql_connect_error());
-					}
-
-					$query = "INSERT INTO post (author_id, title, path, date, genre, description) VALUES (";
-
-					$query .= "1, ";
-					
-					// Title:
-					$ftitle = $_POST['ftitle'];
-					if(isset($ftitle))
-					{
-						$query .= query_append_str($ftitle);
-					}else{
-						die("Title is required");
-					}
-
-					// File:
-					$ffile = $_POST['ffile'];
-					if(isset($ffile))
-					{
-						$query .= query_append_str("posts/" . $ffile);
-					}else{
-						die("You must give a file");
-					}
-
-					$query .= "CURDATE(), ";
-					$query .= "'tech', ";
-
-					// Description:
-					$fdescription = $_POST['fdescription'];
-					if(isset($fdescription))
-					{
-						$query .= "'" . $fdescription . "'";
-					}else{
-						die("Description is required");
-					}
-					
-					$query .= ");";
-
-					echo $query;
-					
-					if($link->query($query) === true) {
-						echo "<br>New record created successfully";
-					}else{
-						echo "<br>Error: " . "<br>" . $link->error;
-					}
-					
-					// Close connection
-					$link->close();
-					
-					echo '</div>';
-				}
-				?>
 			</div>
 		</div>
 		
