@@ -30,9 +30,9 @@
 					
 					echo '<div class="error">';
 					
-					$link = mysqli_connect("localhost", "root", "arrows1290");
+					$link = new mysqli("localhost", "root", "arrows1290", "the_sole_consul");
 					if($link === false){
-						die("ERROR: Could not connect. " . mysqli_connect_error());
+						die("ERROR: Could not connect. " . mysql_connect_error());
 					}
 
 					$query = "INSERT INTO post (author_id, title, path, date, genre, description) VALUES (";
@@ -69,17 +69,18 @@
 						die("Description is required");
 					}
 					
-					$query .= ")";
-					echo $query;
+					$query .= ");";
 
-					if(mysql_query($link, $query)) {
+					echo $query;
+					
+					if($link->query($query) === true) {
 						echo "<br>New record created successfully";
-					} else {
+					}else{
 						echo "<br>Error: " . "<br>" . $link->error;
 					}
-				
+					
 					// Close connection
-					mysql_close($link);
+					$link->close();
 					
 					echo '</div>';
 				}
