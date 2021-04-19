@@ -1,11 +1,23 @@
 body {
-	background-color: #FFFFAA;
+	//background-color: #FFFFAA;
+	background-image: url('../images/background.gif');
+	background-size: auto;
+	background-repeat: repeat;
+	background-attachment: fixed;
 }
 
 .page {
 	padding-top: 20px;
-	width: 70%;
+	width: 65%;
 	margin: auto;
+	opacity: 0.6;
+}
+
+.page:hover {
+	padding-top: 20px;
+	width: 65%;
+	margin: auto;
+	opacity: 1;
 }
 
 .content {
