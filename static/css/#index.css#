@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+}
+
+.header-item {
+	flex: 50%;
+	margin-left: auto;
+}
+
+.post-table {
+	width: 80%;
+	border: 1px solid white;
+}
+
+tr.post-table {
+	border: 1px solid white;
+}

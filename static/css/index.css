@@ -1,0 +1,20 @@
+.header {
+	display: flex;
+	margin-bottom: 5%;
+}
+
+.header-item {
+	flex: 50%;
+	margin-left: auto;
+}
+
+.post-table {
+	margin-left: 5%;
+	width: 90%;
+	border: 1px solid white;
+	margin-bottom: 5%;
+}
+
+.post-table td {
+	border: 1px solid white;
+}

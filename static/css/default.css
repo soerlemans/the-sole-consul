@@ -1,32 +1,21 @@
 body {
-	//background-color: #FFFFAA;
-	background-image: url('../images/background.gif');
-	background-size: auto;
-	background-repeat: repeat;
-	background-attachment: fixed;
+	background: #000000 url('../images/background.gif') repeat fixed left top;
 }
 
 .page {
 	padding-top: 20px;
-	width: 65%;
+	width: 70%;
 	margin: auto;
-	opacity: 0.6;
-}
-
-.page:hover {
-	padding-top: 20px;
-	width: 65%;
-	margin: auto;
-	opacity: 1;
 }
 
 .content {
 	padding: 5px 10px 5px 10px;
-	background-color: #EEEE99;
+	background-color: #000000;
+	color: #FFFFFF;
 }
 
 .error {
-	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
 	text-align: center;
 	color: red;
 }

@@ -10,6 +10,7 @@
 		<title>The sole consul | Home</title>
 	</head>
 	<body>
+		<?php include('includes/credentials.php') ?>
 		<?php include('includes/navbar.php') ?>
 		<?php include('includes/menu.php') ?>
 
@@ -23,8 +24,8 @@
 					
 					echo '<div class="error">';
 					
-					$link = new mysqli("localhost", "root", "arrows1290", "the_sole_consul");
-					if($link === false){
+					$connection = new mysqli($host, $user, $password, $database);
+					if($connection === false){
 						die("ERROR: Could not connect. " . mysql_connect_error() . "<br>");
 					}
 
@@ -59,15 +60,15 @@
 					// Physically upload the post, to the drive:
 					upload_post("ffile");
 					
-					if($link->query($query)) {
+					if($connection->query($query)) {
 						echo "The quer was succesfull";
 					}else{
-						echo "Error: " . "<br>" . $link->error;
+						echo "Error: " . "<br>" . $connection->error;
 					}
 					echo "<br>";
 					
 					// Close connection
-					$link->close();
+					$connection->close();
 					
 					echo "</div>";
 				}
