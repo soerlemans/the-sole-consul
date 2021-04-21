@@ -10,7 +10,6 @@
 		<title>The sole consul | Home</title>
 	</head>
 	<body>
-		<?php include('includes/credentials.php') ?>
 		<?php include('includes/navbar.php') ?>
 		<?php include('includes/menu.php') ?>
 
@@ -25,9 +24,8 @@
 					echo '<div class="error">';
 					
 					$connection = new mysqli($host, $user, $password, $database);
-					if($connection === false){
+					if($connection === false)
 						die("ERROR: Could not connect. " . mysql_connect_error() . "<br>");
-					}
 
 					$query = "INSERT INTO post (author_id, title, path, date, genre, description) VALUES (";
 
@@ -47,24 +45,22 @@
 					// Description:
 					$fdescription = $_POST['fdescription'];
 					if(isset($fdescription))
-					{
 						$query .= "'" . $fdescription . "'";
-					}else{
+					else
 						die("Description is required <br>");
-					}
-					
+
 					$query .= ");";
 
 					echo $query . "<br>";
 
 					// Physically upload the post, to the drive:
-					upload_post("ffile");
+					upload_post($ffile);
 					
 					if($connection->query($query)) {
-						echo "The quer was succesfull";
-					}else{
+						echo "The query was succesfull";
+					else
 						echo "Error: " . "<br>" . $connection->error;
-					}
+						
 					echo "<br>";
 					
 					// Close connection

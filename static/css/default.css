@@ -1,5 +1,5 @@
 body {
-	background: #000000 url('../images/background.gif') repeat fixed left top;
+	background: black url('../gifs/background.gif') repeat fixed left top;
 }
 
 .page {
@@ -10,8 +10,8 @@ body {
 
 .content {
 	padding: 5px 10px 5px 10px;
-	background-color: #000000;
-	color: #FFFFFF;
+	background-color: black;
+	color: white;
 }
 
 .error {
@@ -20,4 +20,13 @@ body {
 	color: red;
 }
 
+.two-column-container {
+	display: flex;
+	margin-bottom: 5%;
+}
+
+.two-column {
+	flex: 50%;
+	margin-left: auto;
+}
 

@@ -15,7 +15,7 @@
 		<div class="page">
 			<div class="content">
 
-				<form method="post" action="check_upload.php">
+				<form method="post" action="check_upload.php" enctype="multipart/form-data">
 					Name <br> <input type="text" name="ftitle" value="" > <br>
 					Description:<br> <input type="text" name="fdescription"> <br>
 					Upload post: <br> <input type="file" name="ffile"> <br>

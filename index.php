@@ -17,11 +17,12 @@
 
 		<div class="page">
 			<div class="content">
-				<h1> Welcome to the sole consul </h1>
+				
+				<h1> Welcome to the sole consul <img src="static/images/apu_graduation.jpg" style="width: 100px; height: 100px;"> </h1>
 				
 				<!-- Create a header for the website with some info -->
-				<div class="header">
-					<div class="header-item">
+				<div class="two-column-container">
+					<div class="two-column">
 						<h2> What is this website?</h2>
 						<p> This website is made in Web 1.0 style
 							Meaning i have an excuse for not doing having to do, anything when my website is ugly.
@@ -29,16 +30,18 @@
 						</p>
 					</div>
 					
-					<div class="header-item">
+					<div class="two-column">
 						<h2> Buttons </h2>
 						<p> Websites used to have something called buttons (basically a GIF, of a certain size).
 							Here you go lots of buttons
 						</p>
-						<img src="static/images/gif_button_emacs_now.gif">
+						<img src="static/gifs/button_powered_by_debian.gif">
+						<img src="static/gifs/button_emacs_now.gif">
 						<img src="static/images/button_linux_now.jpg">
 					</div>
-				</div>	
+				</div>
 				
+				<h2> Posts </h2>
 				<table class="post-table">
 					<tr>
 						<th> Title </th>
@@ -49,18 +52,28 @@
 					<?php
 
 					$connection = new mysqli($host, $user, $password, $database);
+					if($connection === false)
+						die("ERROR: Could not connect. " . mysql_connect_error() . "<br>");
 					
 					$query = "SELECT title, date, genre FROM post;";
 					
 					$result = $connection->query($query);
 
+					$flip = false;
+					
 					while($row = $result->fetch_assoc())
 					{
-						echo '<tr>';
-						echo '<td>' . $row["title"] . '</td>';
-						echo '<td>' . $row["date"] . '</td>';
+						if($flip)
+							echo '<tr style="background-color: #404040;">';
+						else
+							echo '<tr>';
+						
+						echo '<td> <a href="https://www.4chan.org">' . $row["title"] . '</a> </td>';
 						echo '<td>' . $row["genre"] . '</td>';
+						echo '<td>' . $row["date"]  . '</td>';
 						echo '</tr>';
+
+						$flip = !$flip;
 					}
 
 					$connection->close();
