@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php include('includes/navbar.php') ?>
+		<?php require_once('includes/navbar.php') ?>
 		
 		<div class="page">
 			<div class="content">
@@ -20,7 +20,7 @@
 					Not really a webdev but it can be pretty fun to have youre own website. Furthermore im really into linux, modern C++ and all things tech. <br>
 				</p>
 
-				<?php include('includes/footer.php') ?>
+				<?php require_once('includes/footer.php') ?>
 			</div>
 		</div>
 	</body>

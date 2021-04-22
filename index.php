@@ -12,9 +12,9 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php include('includes/credentials.php') ?>
-		<?php include('includes/navbar.php') ?>
-		<?php include('includes/menu.php') ?>
+		<?php require_once('includes/credentials.php') ?>
+		<?php require_once('includes/navbar.php') ?>
+		<?php require_once('includes/menu.php') ?>
 
 		<div class="page">
 			<div class="content">
@@ -26,8 +26,8 @@
 					<div class="two-column">
 						<h2> What is this website?</h2>
 						<p> This website is made in Web 1.0 style
-							Meaning i have an excuse for not doing having to do, anything when my website is ugly.
-							I mostly do stupid stuff on here and have fun with HTML/CSS.
+							Meaning i have an excuse for not having to do anything, when my website is ugly.
+							I mostly do stupid stuff on here and have fun with HTML/CSS and even PHP. <small> shudder (PHP sucks so hard)</small>
 						</p>
 					</div>
 					
@@ -46,8 +46,8 @@
 				<table class="post-table">
 					<tr>
 						<th> Title </th>
-						<th> Date </th>
 						<th> Genre </th>
+						<th> Date </th>
 					</tr>
 
 					<?php
@@ -56,10 +56,11 @@
 					if($connection === false)
 						die("ERROR: Could not connect. " . mysql_connect_error() . "<br>");
 					
-					$query = "SELECT title, date, genre FROM post;";
+					$query = "SELECT title, path, date, genre FROM post;";
 					
 					$result = $connection->query($query);
 
+					// Create a alternating color pattern
 					$flip = false;
 					
 					while($row = $result->fetch_assoc())
@@ -68,10 +69,12 @@
 							echo '<tr style="background-color: #404040;">';
 						else
 							echo '<tr>';
-						
-						echo '<td> <a href="https://www.4chan.org">' . $row["title"] . '</a> </td>';
+
+						// Place the content for the rows
+						echo '<td> <a href="' . $row["path"] . '" class="post-link">' . $row["title"] . '</a> </td>';
 						echo '<td>' . $row["genre"] . '</td>';
 						echo '<td>' . $row["date"]  . '</td>';
+						
 						echo '</tr>';
 
 						$flip = !$flip;
@@ -81,7 +84,9 @@
 					?>
 				</table>
 
-				<?php include('includes/footer.php') ?>
+				<?php include_once('includes/content.php') ?>
+
+				<?php require_once('includes/footer.php') ?>
 			</div>
 		</div>
 		

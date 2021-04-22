@@ -11,16 +11,17 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php include('includes/navbar.php') ?>
-		<?php include('includes/menu.php') ?>
+		<?php require_once("includes/credentials.php") ?>
+		<?php require_once("includes/navbar.php") ?>
+		<?php require_once("includes/menu.php") ?>
 
 		<div class="page">
 			<div class="content">
-				
+
 				<?php
 				if($_SERVER["REQUEST_METHOD"] == "POST")
 				{
-					include('includes/functions.php');
+					require_once("includes/functions.php");
 					
 					echo '<div class="error">';
 					
@@ -33,11 +34,12 @@
 					$query .= "1, ";
 					
 					// Title:
-					$ftitle = $_POST['ftitle'];
+					$ftitle = $_POST["ftitle"];
 					$query .= query_append_str($ftitle, "Title is required");
 
 					// File:
-					$ffile = $_POST['ffile'];
+					$ffile = $_FILES["ffile"]["name"];
+					echo "file: " . $ffile;
 					$query .= query_append_str("data/" . $ffile, "You must give a file");
 
 					$query .= "CURDATE(), ";
@@ -55,17 +57,10 @@
 					echo $query . "<br>";
 
 					// Physically upload the post, to the drive:
-					//upload_post($ffile);
-
-					echo "File " . $ffile . "; <br>";
-					
-					if(move_uploaded_file($_FILES[$ffile]["tmp_name"], "data/" . basename($_FILES[$ffile]["name"])))
-						echo "Uploading of file was successfull <br>";
-					else
-						echo "File failed to upload <br>";
+					upload_file("ffile");
 					
 					if($connection->query($query))
-						echo "The query was succesfull <br>";
+						echo "The query was succesfull";
 					else
 						echo "Error: " . "<br>" . $connection->error;
 					

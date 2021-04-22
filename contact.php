@@ -9,14 +9,14 @@
 	<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
   </head>
   <body>
-	<?php include('includes/navbar.php') ?>
+	<?php require_once('includes/navbar.php') ?>
 	
 	<div class="page">
 	  <div class="content">
 		<h3> Contact info: </h3>
 		<a href="mailto:thetoad0@gmail.com">thetoad0@gmail.com</a>
 
-		<?php include('includes/footer.php') ?>
+		<?php require_once('includes/footer.php') ?>
 	  </div>
 	</div>
   </body>

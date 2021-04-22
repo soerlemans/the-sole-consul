@@ -4,3 +4,11 @@
 	border: 1px solid white;
 	margin-bottom: 5%;
 }
+
+.post-link:link {
+	color: white;
+}
+
+.post-link:visited {
+	color: #7080C0;
+}

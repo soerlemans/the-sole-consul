@@ -1,0 +1,11 @@
+// This doesnt work fix later
+.banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.footer {
+	color: #A0D090;
+}
