@@ -5,7 +5,8 @@
 		
 		<link rel="stylesheet" href="static/css/default.css" type="text/css"> </link>
 		
-		<title>The sole consul | About</title>
+		<title>The sole consul | About </title>
+		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
 		<?php include('includes/navbar.php') ?>
@@ -16,7 +17,7 @@
 				<h2> About me: </h2>
 				<p>
 					I am a programmer from the Netherlands. On this website i host a blog and occasionaly post content I enjoy. <br>
-					Furthermore im really into linux, modern C++ and all things tech. <br>
+					Not really a webdev but it can be pretty fun to have youre own website. Furthermore im really into linux, modern C++ and all things tech. <br>
 				</p>
 
 				<?php include('includes/footer.php') ?>

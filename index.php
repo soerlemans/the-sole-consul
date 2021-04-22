@@ -9,6 +9,7 @@
 		<!-- I like this title as consuls are advisors. Furthermore its a contradiction cause consuls 
 			 come in pairs as to prevent an absolute anuthority !-->
 		<title>The sole consul | Home</title>
+		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
 		<?php include('includes/credentials.php') ?>
@@ -18,7 +19,7 @@
 		<div class="page">
 			<div class="content">
 				
-				<h1> Welcome to the sole consul <img src="static/images/apu_graduation.jpg" style="width: 100px; height: 100px;"> </h1>
+				<h1> Welcome to the sole consul <img src="static/images/apu_graduation.png" style="width: 1em; height: 1em;"> </h1>
 				
 				<!-- Create a header for the website with some info -->
 				<div class="two-column-container">

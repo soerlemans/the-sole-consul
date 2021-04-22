@@ -14,12 +14,14 @@ body {
 	color: white;
 }
 
+// Displaying PHP errors
 .error {
 	margin: 10px 10px 10px 10px;
 	text-align: center;
 	color: red;
 }
 
+// Two column stylesettings
 .two-column-container {
 	display: flex;
 	margin-bottom: 5%;
@@ -29,4 +31,3 @@ body {
 	flex: 50%;
 	margin-left: auto;
 }
-

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="static/css/default.css" type="text/css"> </link>
 	
 	<title>The sole consul | Contact</title>
+	<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
   </head>
   <body>
 	<?php include('includes/navbar.php') ?>

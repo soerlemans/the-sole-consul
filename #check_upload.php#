@@ -38,7 +38,7 @@
 
 					// File:
 					$ffile = $_POST['ffile'];
-					$query .= query_append_str("data/" . $ffile, "You must give a file");
+					$query .= query_append_str("posts/" . $ffile, "You must give a file");
 
 					$query .= "CURDATE(), ";
 					$query .= "'tech', ";
@@ -56,19 +56,18 @@
 
 					// Physically upload the post, to the drive:
 					//upload_post($ffile);
-
-					echo "File " . $ffile . "; <br>";
-					
 					if(move_uploaded_file($_FILES[$ffile]["tmp_name"], "data/" . basename($_FILES[$ffile]["name"])))
-						echo "Uploading of file was successfull <br>";
-					else
-						echo "File failed to upload <br>";
+					{
+						echo "Uploading of file was successfull";
+					}else
+						echo "File failed to upload";
+					}
 					
-					if($connection->query($query))
-						echo "The query was succesfull <br>";
+					if($connection->query($query)) {
+						echo "The query was succesfull";
 					else
 						echo "Error: " . "<br>" . $connection->error;
-					
+						
 					echo "<br>";
 					
 					// Close connection

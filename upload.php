@@ -7,7 +7,8 @@
 
 		<!-- I like this title as consuls are advisors. Furthermore its a contradiction cause consuls 
 			 come in pairs as to prevent an absolute authority !-->
-		<title>The sole consul | Home</title>
+		<title> The sole consul | Upload </title>
+		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
 		<?php include('includes/navbar.php') ?>
