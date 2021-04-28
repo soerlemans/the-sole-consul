@@ -14,7 +14,11 @@
 	<body>
 		<?php require_once('includes/credentials.php') ?>
 		<?php require_once('includes/navbar.php') ?>
-		<?php require_once('includes/menu.php') ?>
+		
+		<?php
+		$current_file = __FILE__;
+		require_once('includes/menu.php')
+		?>
 
 		<div class="page">
 			<div class="content">
@@ -24,7 +28,7 @@
 				<!-- Create a header for the website with some info -->
 				<div class="two-column-container">
 					<div class="two-column">
-						<h2> What is this website?</h2>
+						<h2 id="introduction"> What is this website?</h2>
 						<p> This website is made in Web 1.0 style
 							Meaning i have an excuse for not having to do anything, when my website is ugly.
 							I mostly do stupid stuff on here and have fun with HTML/CSS and even PHP. <small> shudder (PHP sucks so hard)</small>
@@ -32,7 +36,7 @@
 					</div>
 					
 					<div class="two-column">
-						<h2> Buttons </h2>
+						<h2 id="buttons"> Buttons </h2>
 						<p> Websites used to have something called buttons (basically a GIF, of a certain size).
 							Here you go lots of buttons
 						</p>
@@ -42,7 +46,7 @@
 					</div>
 				</div>
 				
-				<h2> Posts </h2>
+				<h2 id="posts"> Posts </h2>
 				<table class="post-table">
 					<tr>
 						<th> Title </th>

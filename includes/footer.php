@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="static/css/footer.css" type="text/css"></link>
-<div class="footer">	
+<div class="footer">
+	<br>
 	<footer>
-		<img src="static/gifs/banner.gif" class="banner"> <br>
 		&copy
 		<?php
 		$start_year = 2021;

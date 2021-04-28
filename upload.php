@@ -16,13 +16,25 @@
 		<div class="page">
 			<div class="content">
 
-				<form method="post" action="check_upload.php" enctype="multipart/form-data">
-					Name <br> <input type="text" name="ftitle" value="" > <br>
-					Description:<br> <input type="text" name="fdescription"> <br>
-					Upload post: <br> <input type="file" name="ffile"> <br>
+				<form method="post" action="check_post.php" enctype="multipart/form-data">
+					Name <br> <input type="text" name="post_title"> <br>
+					Description:<br> <input type="text" name="post_description"> <br>
+					Upload post: <br> <input type="file" name="post_file"> <br>
 					<br>
 					<input type="submit">
 				</form>
+
+				<br>
+				
+				<form method="post" action="check_resource.php" enctype="multipart/form-data">
+					Url <br> <input type="text" name="website_url"> <br>
+					Tag <br> <input type="text" name="website_tag"> <br>
+					Priority: <br> <input type="number" name="website_priority" value="500"> <br>
+					Description:<br> <input type="text" name="website_description"> <br>
+					<br>
+					<input type="submit">
+				</form>
+				
 			</div>
 		</div>
 		
