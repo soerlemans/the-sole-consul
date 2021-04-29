@@ -2,6 +2,14 @@ body {
 	background: black url('../gifs/background.gif') repeat fixed left top;
 }
 
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: #7080C0;
+}
+
 .page {
 	padding-top: 20px;
 	width: 70%;
@@ -20,7 +28,6 @@ body {
 	color: red;
 }
 
-// Two column stylesettings
 .two-column-container {
 	display: flex;
 	margin-bottom: 5%;

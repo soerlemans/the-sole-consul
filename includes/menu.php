@@ -1,12 +1,13 @@
+<link rel="stylesheet" href="static/css/default.css">
 <link rel="stylesheet" href="static/css/menu.css">
 <div class="menu">
 	<ul>
 		<?php
 		// It is required that the file that includes this has the currentfile var set to __FILE__
 		if (!isset($current_file))
-			echo "Unknown file included me";
+			die("Unknown file included me");
 		
-		$regexp = "/<h2.*>.*<\/h2>/";
+		$regexp = '/<h2 id=".*".*>.*<\/h2>/';
 		if(preg_match_all($regexp, file_get_contents($current_file), $matches))
 			foreach($matches[0] as $match)
 		{

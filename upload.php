@@ -11,7 +11,11 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php require_once('includes/navbar.php') ?>
+		
+		<?php
+		$current_file = __FILE__;
+		require_once 'includes/navbar.php'; 		
+		?>
 		
 		<div class="page">
 			<div class="content">

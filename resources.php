@@ -11,14 +11,13 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php require_once('includes/credentials.php') ?>
-		<?php require_once('includes/navbar.php') ?>
-
+		
 		<?php
 		$current_file = __FILE__;
-		require_once('includes/menu.php')
+		require_once 'includes/credentials.php';
+		require_once 'includes/navbar.php'; 		
+		require_once 'includes/menu.php';
 		?>
-
 
 		<div class="page">
 			<div class="content">
@@ -55,7 +54,7 @@
 				</ol>
 				<br>
 
-				<?php require_once('includes/footer.php') ?>
+				<?php require_once 'includes/footer.php'; ?>
 			</div>
 		</div>
 		

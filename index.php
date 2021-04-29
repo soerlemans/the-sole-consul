@@ -12,18 +12,17 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php require_once('includes/credentials.php') ?>
-		<?php require_once('includes/navbar.php') ?>
-		
 		<?php
 		$current_file = __FILE__;
-		require_once('includes/menu.php')
+		require_once 'includes/credentials.php';
+		require_once 'includes/navbar.php'; 		
+		require_once 'includes/menu.php';
 		?>
 
 		<div class="page">
 			<div class="content">
-				
-				<h1> Welcome to the sole consul <img src="static/images/apu_graduation.png" style="width: 1em; height: 1em;"> </h1>
+
+				<h1 id="website-intro"> Welcome to the sole consul <img id="website-img" src="static/images/apu_graduation.png"> </h1>
 				
 				<!-- Create a header for the website with some info -->
 				<div class="two-column-container">
@@ -75,7 +74,7 @@
 							echo '<tr>';
 
 						// Place the content for the rows
-						echo '<td> <a href="' . $row["path"] . '" class="post-link">' . $row["title"] . '</a> </td>';
+						echo '<td> <a href="' . $row["path"] . '">' . $row["title"] . '</a> </td>';
 						echo '<td>' . $row["genre"] . '</td>';
 						echo '<td>' . $row["date"]  . '</td>';
 						
@@ -88,9 +87,9 @@
 					?>
 				</table>
 
-				<?php include_once('includes/content.php') ?>
+				<?php include_once 'includes/content.php'; ?>
 
-				<?php require_once('includes/footer.php') ?>
+				<?php require_once 'includes/footer.php'; ?>
 			</div>
 		</div>
 		

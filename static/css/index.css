@@ -1,14 +1,24 @@
+@font-face {
+	font-family: FetteFraktur;
+	src: url('../fonts/FetteFraktur/FetteUNZFraktur.ttf') format('truetype');
+}
+
+#website-intro {
+	font-family: FetteFraktur;
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 7px;
+}
+
+#website-img {
+	width: 1em;
+	height: 1em;
+}
+
+
 .post-table {
 	margin-left: 5%;
 	width: 90%;
 	border: 1px solid white;
 	margin-bottom: 5%;
-}
-
-.post-link:link {
-	color: white;
-}
-
-.post-link:visited {
-	color: #7080C0;
 }

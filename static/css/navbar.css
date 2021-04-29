@@ -17,7 +17,9 @@
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
 	font-size: 17px;
-	color: #AAAAAA;
+
+	/* This is broken cause on resources.php and index.php the "a" tag values get overriden by default.css */
+	/* color: #AAAAAA; */
 	border: 1px solid white;
 }
 

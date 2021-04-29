@@ -9,7 +9,12 @@
 		<link rel="shortcut icon" type="image/png" href="static/images/apu_graduation.png"/>
 	</head>
 	<body>
-		<?php require_once('includes/navbar.php') ?>
+		
+		<?php
+		$current_file = __FILE__;
+		require_once 'includes/navbar.php'; 		
+		?>
+		
 		
 		<div class="page">
 			<div class="content">
@@ -17,10 +22,11 @@
 				<h2> About me: </h2>
 				<p>
 					I am a programmer from the Netherlands. On this website i host a blog and occasionaly post content I enjoy. <br>
-					Not really a webdev but it can be pretty fun to have youre own website. Furthermore im really into linux, modern C++ and all things tech. <br>
+					Not really a webdev but it can be pretty fun to have youre own website (Except for having to use PHP). Furthermore im really into linux, modern C++, Common LISP and bash scripting. <br>
+					I also like old tech and computer science history.
 				</p>
 
-				<?php require_once('includes/footer.php') ?>
+				<?php require_once 'includes/footer.php'; ?>
 			</div>
 		</div>
 	</body>
