@@ -21,8 +21,9 @@
 
 		<div class="page">
 			<div class="content">
+
+				<h1> Resources </h1>
 		
-				<h1> Welcome to the sole consul <img src="static/images/apu_graduation.png" style="width: 1em; height: 1em;"> </h1>
 				<p> Here i have an extensive list of resources (Books, websites, papers, etc) i think deserve some attention. </p>
 
 				<h2 id="websites"> Websites </h2>

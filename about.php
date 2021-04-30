@@ -19,7 +19,7 @@
 		<div class="page">
 			<div class="content">
 				
-				<h2> About me: </h2>
+				<h1> About me </h1>
 				<p>
 					I am a programmer from the Netherlands. On this website i host a blog and occasionaly post content I enjoy. <br>
 					Not really a webdev but it can be pretty fun to have youre own website (Except for having to use PHP). Furthermore im really into linux, modern C++, Common LISP and bash scripting. <br>

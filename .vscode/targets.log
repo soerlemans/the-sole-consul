@@ -1,0 +1,311 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Apr 30 13:24:59 2021
+
+# Variables
+
+# environment
+define FZF_DEFAULT_OPTS
+
+    
+    --color fg:7,bg:0,hl:1,fg+:232,bg+:1,hl+:255
+    --color info:7,prompt:2,spinner:1,pointer:232,marker:1
+
+endef
+# environment
+JAVA_HOME = /etc/java-config-2/current-system-vm
+# environment
+NO_AT_BRIDGE = 1
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /tmp/vscode-ipc-02cc855d-eb35-4ebb-a06a-459d4563b3a8.sock
+# environment
+VSCODE_CWD = /home/hackerman
+# environment
+WINDOWPATH = 7
+# environment
+GCC_SPECS = 
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/hackerman/Projects/Git/the-sole-consul
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/mail/hackerman
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share
+# environment
+OLDPWD = /home/hackerman
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+STUDIE = /home/hackerman/Documents/Studie
+# environment
+LANG = en_US.utf8
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/hackerman/Projects/Git/the-sole-consul
+# environment
+SCREENSHOTS = /home/hackerman/Pictures/Screenshots
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = |lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+ZDOTDIR = /home/hackerman/.config/zsh
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=a6219108-899b-4221-80bf-7325bf5d0179&iid=a6219108-899b-4221-80bf-7325bf5d0179&sid=a6219108-899b-4221-80bf-7325bf5d0179","uploadToServer":true}
+# makefile
+MAKEFILE_LIST := 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 10298
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+CONFIG = /home/hackerman/.config
+# environment
+MANPAGER = manpager
+# environment
+SBCL_SOURCE_ROOT = /usr/lib64/sbcl/src
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /etc/java-config-2/current-system-vm/man:/usr/share/gcc-data/x86_64-pc-linux-gnu/10.3.0/man:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.36.1/man:/etc/java-config-2/current-system-vm/man/:/usr/local/share/man:/usr/share/man:/usr/lib/rust/man:/usr/lib/llvm/12/share/man:/usr/lib/llvm/11/share/man
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-9DoJXNGP7q,guid=8985ca4e692f66b1be50e1ba608be1a7
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+LESS_ADVANCED_PREPROCESSOR = 1
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/hackerman/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+INFOPATH = /usr/share/gcc-data/x86_64-pc-linux-gnu/10.3.0/info:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.36.1/info:/usr/share/info:/usr/share/info/emacs-27
+# makefile
+SHELL = /bin/sh
+# environment
+SBCL_HOME = /usr/lib64/sbcl
+# default
+MAKECMDGOALS := all
+# environment
+READER = zathura
+# environment
+SHLVL = 3
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/12/bin:/usr/lib/llvm/11/bin
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+QT_DEVICE_PIXEL_RATIO = auto
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+GSETTINGS_BACKEND = dconf
+# environment
+MCD = /mnt/cdrom
+# environment
+JAVAC = /etc/java-config-2/current-system-vm/bin/javac
+# environment
+LS_COLORS = :su=30;41:ow=30;42:st=30;44:
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R -M --shift 5
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = qutebrowser
+# environment
+LOGNAME = hackerman
+# environment
+GIT = /home/hackerman/Projects/Git
+# environment
+CONFIG_PROTECT_MASK = /etc/sandbox.d /etc/fonts/fonts.conf /etc/gentoo-release /etc/terminfo /etc/dconf /etc/ca-certificates.conf /etc/texmf/web2c /etc/texmf/language.dat.d /etc/texmf/language.def.d /etc/texmf/updmap.d /etc/revdep-rebuild
+# environment
+CONFIG_PROTECT = /usr/share/gnupg/qualified.txt /usr/share/config /usr/lib64/libreoffice/program/sofficerc
+# environment
+TERMINAL = st
+# makefile
+.DEFAULT_GOAL := 
+# environment
+EDITOR = nvim
+# environment
+DISPLAY = :0
+# environment
+GTK_MODULES = canberra-gtk-module
+# environment
+USER = hackerman
+# default
+MAKE_VERSION := 4.3
+# environment
+OPENGL_PROFILE = xorg-x11
+# environment
+WALLPAPERS = /home/hackerman/Pictures/Wallpapers
+# environment
+SCRIPTS = /home/hackerman/Scripts
+# environment
+PAGER = /usr/bin/less
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/hackerman/.config/Code/CachedData/c185983a683d14c396952dd432459097bc7f757f
+# environment
+_ = /usr/bin/make
+# environment
+VISUAL = emacs
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+FILE = ranger
+# environment
+HOME = /home/hackerman
+# environment
+JDK_HOME = /etc/java-config-2/current-system-vm
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+ANT_HOME = /usr/share/ant
+# environment
+VSCODE_IPC_HOOK = /home/hackerman/.config/Code/1.55.0-main.sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+PT7HOME = /opt/pt
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+MSD = /mnt/sd
+# variable set hash-table stats:
+# Load=110/1024=11%, Rehash=0, Collisions=7/137=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2055, inode 398780): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 24 / storage = 233 B / avg = 9 B
+# current buf: size = 8162 B / used = 233 B / count = 24 / avg = 9 B
+
+# strcache performance: lookups = 27 / hit rate = 11%
+# hash-table stats:
+# Load=24/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Fri Apr 30 13:24:59 2021
+
+ 

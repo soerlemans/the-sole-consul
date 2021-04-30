@@ -17,7 +17,8 @@
 		
 		<div class="page">
 			<div class="content">
-				<h3> Contact info: </h3>
+				
+				<h1> Contact info </h1>
 				<a href="mailto:thetoad0@gmail.com">thetoad0@gmail.com</a>
 
 				<?php require_once 'includes/footer.php'; ?>

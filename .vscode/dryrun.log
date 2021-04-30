@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/hackerman/Projects/Git/the-sole-consul'
+make: Leaving directory '/home/hackerman/Projects/Git/the-sole-consul'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 
